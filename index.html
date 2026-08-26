@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>গয়নার বাক্স | Goynar Baksho — Royal Handmade Jewelry</title>
+    <title>নকশি আভা | Nokshi Abha — Royal Handmade Jewelry</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Noto Serif Bengali (elegant Bangla display serif) + Hind Siliguri (body/UI) -->
@@ -187,15 +187,19 @@
                     <polygon points="20,2 34,14 27,38 13,38 6,14" fill="url(#gemGrad)" stroke="#3B0303" stroke-width="1"/>
                     <polygon points="20,2 34,14 20,18 6,14" fill="#F4D785" opacity="0.55"/>
                 </svg>
-                <span class="text-2xl sm:text-3xl font-bold font-serif gold-text">গয়নার বাক্স</span>
+                <span class="text-2xl sm:text-3xl font-bold font-serif gold-text">নকশি আভা</span>
             </div>
             <nav class="hidden md:flex space-x-8 font-medium text-ink/80">
                 <a href="#home" class="relative py-1 hover:text-primary transition duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-secondary after:transition-all after:duration-300 hover:after:w-full">হোম</a>
                 <a href="#products" class="relative py-1 hover:text-primary transition duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-secondary after:transition-all after:duration-300 hover:after:w-full">কালেকশন</a>
                 <a href="#gallery" class="relative py-1 hover:text-primary transition duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-secondary after:transition-all after:duration-300 hover:after:w-full">থ্রিডি গ্যালারি</a>
+                <a href="#lookbook" class="relative py-1 hover:text-primary transition duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-secondary after:transition-all after:duration-300 hover:after:w-full">লুকবুক</a>
                 <a href="#faq" class="relative py-1 hover:text-primary transition duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-secondary after:transition-all after:duration-300 hover:after:w-full">জিজ্ঞাসা</a>
             </nav>
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-3">
+                <a href="https://www.facebook.com/profile.php?id=61593305901806" target="_blank" rel="noopener" class="hidden sm:flex items-center gap-2 bg-[#1877F2] hover:bg-[#0f5fcc] text-white px-4 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 shadow-sm">
+                    <i class="fa-brands fa-facebook-f"></i> ফেসবুকে অর্ডার করুন
+                </a>
                 <button onclick="toggleCart()" class="relative p-3 bg-amber-50 text-primary hover:bg-secondary hover:text-white rounded-full transition-all duration-300 shadow-sm">
                     <i class="fa-solid fa-bag-shopping text-lg"></i>
                     <span id="cart-count" class="absolute -top-1 -right-1 bg-primary text-goldlight text-xs w-5 h-5 flex items-center justify-center rounded-full font-bold border-2 border-white shadow">0</span>
@@ -212,7 +216,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative">
             <div class="space-y-6 text-center md:text-left z-10 reveal">
                 <span class="bg-primarydeep text-goldlight text-xs sm:text-sm font-semibold px-4 py-2 rounded-full inline-flex items-center gap-2 border border-blush/30 shadow shadow-blush/10">
-                    <i class="fa-solid fa-crown text-secondary"></i> রয়্যাল হ্যান্ডমেড জুয়েলারি
+                    <i class="fa-solid fa-crown text-secondary"></i> নকশি আভা — রয়্যাল হ্যান্ডমেড জুয়েলারি
                 </span>
                 <h1 class="text-4xl sm:text-6xl font-bold font-serif text-ink leading-tight">
                     ঐতিহ্যে আর আভিজাত্যে <span class="gold-text">আপনার সাজ</span>
@@ -231,6 +235,11 @@
             </div>
             <div class="relative flex justify-center reveal-scale">
                 <div class="w-80 sm:w-96 h-80 sm:h-96 bg-gradient-to-tr from-secondary/30 via-blush/15 to-primary/20 rounded-full absolute -z-10 blur-2xl animate-pulse"></div>
+
+                <!-- Small stacked polaroid photo behind the main card, for depth -->
+                <div class="hidden sm:block absolute -top-6 -right-8 bg-white p-2 rounded-xl shadow-xl border border-secondary/20 rotate-6 w-28 h-32 z-0">
+                    <img src="6323563453683012009.jpg" alt="Nokshi Abha jewelry detail" class="w-full h-full object-cover rounded-lg">
+                </div>
 
                 <!-- Only the image card tilts in 3D — the badge stays outside so it floats smoothly -->
                 <div class="tilt-card relative group" id="heroTilt">
@@ -291,9 +300,12 @@
                         <span class="text-xs text-ink/40 block">মূল্য</span>
                         <span class="text-2xl font-bold text-primary">৳৪৫০</span>
                     </div>
-                    <button onclick="addToCart('রয়্যাল টিল-গোল্ডেন সিল্ক থ্রেড চুড়ি', 450)" class="bg-primary hover:bg-primarydeep text-goldlight px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
-                        <i class="fa-solid fa-cart-plus"></i> ব্যাগে নিন
-                    </button>
+                    <div class="flex items-center gap-2">
+                        <a href="https://www.facebook.com/profile.php?id=61593305901806" target="_blank" rel="noopener" class="w-11 h-11 flex items-center justify-center rounded-xl bg-[#1877F2]/10 text-[#1877F2] hover:bg-[#1877F2] hover:text-white transition-all duration-300" title="ফেসবুকে অর্ডার করুন"><i class="fa-brands fa-facebook-f"></i></a>
+                        <button onclick="addToCart('রয়্যাল টিল-গোল্ডেন সিল্ক থ্রেড চুড়ি', 450)" class="bg-primary hover:bg-primarydeep text-goldlight px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
+                            <i class="fa-solid fa-cart-plus"></i> ব্যাগে নিন
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -313,9 +325,12 @@
                         <span class="text-xs text-ink/40 block">মূল্য</span>
                         <span class="text-2xl font-bold text-primary">৳৮৫০</span>
                     </div>
-                    <button onclick="addToCart('ক্লাসিক মেরুন রয়্যাল কুন্দন সেট', 850)" class="bg-primary hover:bg-primarydeep text-goldlight px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
-                        <i class="fa-solid fa-cart-plus"></i> ব্যাগে নিন
-                    </button>
+                    <div class="flex items-center gap-2">
+                        <a href="https://www.facebook.com/profile.php?id=61593305901806" target="_blank" rel="noopener" class="w-11 h-11 flex items-center justify-center rounded-xl bg-[#1877F2]/10 text-[#1877F2] hover:bg-[#1877F2] hover:text-white transition-all duration-300" title="ফেসবুকে অর্ডার করুন"><i class="fa-brands fa-facebook-f"></i></a>
+                        <button onclick="addToCart('ক্লাসিক মেরুন রয়্যাল কুন্দন সেট', 850)" class="bg-primary hover:bg-primarydeep text-goldlight px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
+                            <i class="fa-solid fa-cart-plus"></i> ব্যাগে নিন
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -335,9 +350,87 @@
                         <span class="text-xs text-ink/40 block">মূল্য</span>
                         <span class="text-2xl font-bold text-primary">৳২৮০</span>
                     </div>
-                    <button onclick="addToCart('স্ট্রবেরি কিউট লকেট নেকলেস', 280)" class="bg-primary hover:bg-primarydeep text-goldlight px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
-                        <i class="fa-solid fa-cart-plus"></i> ব্যাগে নিন
-                    </button>
+                    <div class="flex items-center gap-2">
+                        <a href="https://www.facebook.com/profile.php?id=61593305901806" target="_blank" rel="noopener" class="w-11 h-11 flex items-center justify-center rounded-xl bg-[#1877F2]/10 text-[#1877F2] hover:bg-[#1877F2] hover:text-white transition-all duration-300" title="ফেসবুকে অর্ডার করুন"><i class="fa-brands fa-facebook-f"></i></a>
+                        <button onclick="addToCart('স্ট্রবেরি কিউট লকেট নেকলেস', 280)" class="bg-primary hover:bg-primarydeep text-goldlight px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
+                            <i class="fa-solid fa-cart-plus"></i> ব্যাগে নিন
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="tilt-card product-tilt bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-500 border border-secondary/20 flex flex-col justify-between group relative reveal">
+                <div class="foil-corner"></div>
+                <div class="relative overflow-hidden">
+                    <img src="pic11.jpg" alt="Golden Leaf Earrings" class="w-full h-72 object-cover transform transition duration-700 group-hover:scale-110">
+                    <span class="absolute top-4 left-4 bg-primarydeep/90 backdrop-blur-md text-goldlight text-xs font-bold px-3 py-1.5 rounded-full shadow">নতুন কালেকশন</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold font-serif text-ink group-hover:text-primary transition">গোল্ডেন লিফ কানের দুল</h3>
+                    <p class="text-ink/60 text-sm mt-2 line-clamp-2">হালকা ওজনের অ্যান্টিক গোল্ড ফিনিশ ডিজাইন, নিয়মিত ব্যবহার ও অনুষ্ঠান দুই জায়গাতেই মানানসই।</p>
+                </div>
+                <div class="p-6 pt-0 flex items-center justify-between border-t border-amber-50 mt-4">
+                    <div>
+                        <span class="text-xs text-ink/40 block">মূল্য</span>
+                        <span class="text-2xl font-bold text-primary">৳৩২০</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <a href="https://www.facebook.com/profile.php?id=61593305901806" target="_blank" rel="noopener" class="w-11 h-11 flex items-center justify-center rounded-xl bg-[#1877F2]/10 text-[#1877F2] hover:bg-[#1877F2] hover:text-white transition-all duration-300" title="ফেসবুকে অর্ডার করুন"><i class="fa-brands fa-facebook-f"></i></a>
+                        <button onclick="addToCart('গোল্ডেন লিফ কানের দুল', 320)" class="bg-primary hover:bg-primarydeep text-goldlight px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
+                            <i class="fa-solid fa-cart-plus"></i> ব্যাগে নিন
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="tilt-card product-tilt bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-500 border border-secondary/20 flex flex-col justify-between group relative reveal">
+                <div class="foil-corner"></div>
+                <div class="relative overflow-hidden">
+                    <img src="pic14.jpg" alt="Emerald Pearl Bracelet" class="w-full h-72 object-cover transform transition duration-700 group-hover:scale-110">
+                    <span class="absolute top-4 left-4 bg-primarydeep/90 backdrop-blur-md text-goldlight text-xs font-bold px-3 py-1.5 rounded-full shadow">নতুন কালেকশন</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold font-serif text-ink group-hover:text-primary transition">মুক্তা ও পান্না ব্রেসলেট</h3>
+                    <p class="text-ink/60 text-sm mt-2 line-clamp-2">মুক্তা ও পান্না রঙের পুঁতির সমন্বয়ে তৈরি হাতে গাঁথা এলিগ্যান্ট ব্রেসলেট।</p>
+                </div>
+                <div class="p-6 pt-0 flex items-center justify-between border-t border-amber-50 mt-4">
+                    <div>
+                        <span class="text-xs text-ink/40 block">মূল্য</span>
+                        <span class="text-2xl font-bold text-primary">৳৩৮০</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <a href="https://www.facebook.com/profile.php?id=61593305901806" target="_blank" rel="noopener" class="w-11 h-11 flex items-center justify-center rounded-xl bg-[#1877F2]/10 text-[#1877F2] hover:bg-[#1877F2] hover:text-white transition-all duration-300" title="ফেসবুকে অর্ডার করুন"><i class="fa-brands fa-facebook-f"></i></a>
+                        <button onclick="addToCart('মুক্তা ও পান্না ব্রেসলেট', 380)" class="bg-primary hover:bg-primarydeep text-goldlight px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
+                            <i class="fa-solid fa-cart-plus"></i> ব্যাগে নিন
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="tilt-card product-tilt bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-500 border border-secondary/20 flex flex-col justify-between group relative reveal">
+                <div class="foil-corner"></div>
+                <div class="relative overflow-hidden">
+                    <img src="pic17.jpg" alt="Royal Maang Tikli" class="w-full h-72 object-cover transform transition duration-700 group-hover:scale-110">
+                    <span class="absolute top-4 left-4 bg-primarydeep/90 backdrop-blur-md text-goldlight text-xs font-bold px-3 py-1.5 rounded-full shadow">ব্রাইডাল স্পেশাল</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold font-serif text-ink group-hover:text-primary transition">রয়্যাল মাথার টিকলি</h3>
+                    <p class="text-ink/60 text-sm mt-2 line-clamp-2">বিয়ে বা যেকোনো অনুষ্ঠানের সাজ সম্পূর্ণ করতে জমকালো ডিজাইনের হাতে তৈরি টিকলি।</p>
+                </div>
+                <div class="p-6 pt-0 flex items-center justify-between border-t border-amber-50 mt-4">
+                    <div>
+                        <span class="text-xs text-ink/40 block">মূল্য</span>
+                        <span class="text-2xl font-bold text-primary">৳৬৫০</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <a href="https://www.facebook.com/profile.php?id=61593305901806" target="_blank" rel="noopener" class="w-11 h-11 flex items-center justify-center rounded-xl bg-[#1877F2]/10 text-[#1877F2] hover:bg-[#1877F2] hover:text-white transition-all duration-300" title="ফেসবুকে অর্ডার করুন"><i class="fa-brands fa-facebook-f"></i></a>
+                        <button onclick="addToCart('রয়্যাল মাথার টিকলি', 650)" class="bg-primary hover:bg-primarydeep text-goldlight px-5 py-3 rounded-xl text-sm font-medium transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
+                            <i class="fa-solid fa-cart-plus"></i> ব্যাগে নিন
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -364,6 +457,10 @@
                     <div class="gallery-card" data-i="4"><img src="6323563453683012014.jpg" alt="Gallery 5"></div>
                     <div class="gallery-card" data-i="5"><img src="6323563453683012015.jpg" alt="Gallery 6"></div>
                     <div class="gallery-card" data-i="6"><img src="6323563453683012016.jpg" alt="Gallery 7"></div>
+                    <div class="gallery-card" data-i="7"><img src="6323563453683012048.jpg" alt="Gallery 8"></div>
+                    <div class="gallery-card" data-i="8"><img src="6323563453683012049.jpg" alt="Gallery 9"></div>
+                    <div class="gallery-card" data-i="9"><img src="6323563453683012051.jpg" alt="Gallery 10"></div>
+                    <div class="gallery-card" data-i="10"><img src="6323563453683012052.jpg" alt="Gallery 11"></div>
                 </div>
                 <span class="gallery-hint" id="galleryHint"><i class="fa-solid fa-arrows-left-right mr-1"></i> টেনে ঘোরান</span>
                 <button onclick="toggleFullscreenGallery()" id="galleryCloseBtn" class="hidden absolute top-6 right-6 text-goldlight text-2xl w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 items-center justify-center border border-secondary/30">
@@ -375,6 +472,77 @@
                 <button onclick="toggleFullscreenGallery()" class="bg-secondary hover:bg-goldlight text-gray-950 font-bold px-9 py-4 rounded-2xl shadow-xl transition-all duration-300 transform hover:scale-105">
                     <i class="fa-solid fa-cube mr-2"></i> ফুল স্ক্রিন থ্রিডি মোড অন করুন
                 </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live GIF Showcase -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="text-center mb-14 space-y-3 reveal">
+            <span class="text-secondary font-semibold uppercase tracking-widest text-sm">লাইভ প্রিভিউ</span>
+            <h2 class="text-3xl sm:text-4xl font-bold font-serif text-ink">এক ঝলকে আমাদের কাজ</h2>
+            <div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <div class="reveal group relative rounded-3xl overflow-hidden shadow-xl border border-secondary/20 bg-white">
+                <img src="pic4.gif" alt="নকশি আভা লাইভ প্রিভিউ ১" class="w-full h-72 object-cover">
+                <div class="absolute top-4 left-4 bg-primarydeep/90 backdrop-blur-md text-goldlight text-xs font-bold px-3 py-1.5 rounded-full shadow flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 bg-blush rounded-full animate-pulse"></span> লাইভ
+                </div>
+                <div class="p-4 bg-white border-t border-amber-50">
+                    <p class="font-semibold text-ink text-sm">কালেকশন হাইলাইটস</p>
+                </div>
+            </div>
+            <div class="reveal group relative rounded-3xl overflow-hidden shadow-xl border border-secondary/20 bg-white">
+                <img src="pic6.gif" alt="নকশি আভা লাইভ প্রিভিউ ২" class="w-full h-72 object-cover">
+                <div class="absolute top-4 left-4 bg-primarydeep/90 backdrop-blur-md text-goldlight text-xs font-bold px-3 py-1.5 rounded-full shadow flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 bg-blush rounded-full animate-pulse"></span> লাইভ
+                </div>
+                <div class="p-4 bg-white border-t border-amber-50">
+                    <p class="font-semibold text-ink text-sm">হাতে তৈরির মুহূর্ত</p>
+                </div>
+            </div>
+            <div class="reveal group relative rounded-3xl overflow-hidden shadow-xl border border-secondary/20 bg-white">
+                <img src="pic10.gif" alt="নকশি আভা লাইভ প্রিভিউ ৩" class="w-full h-72 object-cover">
+                <div class="absolute top-4 left-4 bg-primarydeep/90 backdrop-blur-md text-goldlight text-xs font-bold px-3 py-1.5 rounded-full shadow flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 bg-blush rounded-full animate-pulse"></span> লাইভ
+                </div>
+                <div class="p-4 bg-white border-t border-amber-50">
+                    <p class="font-semibold text-ink text-sm">প্যাকেজিং ও গিফটিং</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lookbook Section -->
+    <section id="lookbook" class="bg-gradient-to-b from-white via-amber-50/40 to-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14 space-y-3 reveal">
+                <span class="text-secondary font-semibold uppercase tracking-widest text-sm">নকশি আভার জগতে</span>
+                <h2 class="text-3xl sm:text-4xl font-bold font-serif text-ink">লুকবুক</h2>
+                <div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="reveal-scale relative mx-auto">
+                    <div class="absolute -inset-2 bg-gradient-to-br from-secondary/40 via-blush/20 to-primary/30 rounded-[2rem] blur-xl opacity-60"></div>
+                    <img src="pomelli_photoshoot_image_9_16_0809.png" alt="নকশি আভা ফটোশুট" class="relative rounded-[2rem] shadow-2xl border-4 border-white w-full max-w-sm mx-auto object-cover aspect-[9/16]">
+                </div>
+                <div class="reveal space-y-6">
+                    <p class="text-ink/70 text-lg leading-relaxed">
+                        প্রতিটি গহনার পেছনে রয়েছে যত্নের গল্প। নকশি আভার সংগ্রহে ঐতিহ্যবাহী নকশা আর সমসাময়িক রুচির মেলবন্ধনে তৈরি হয় এমন সাজ, যা আপনার প্রতিটি মুহূর্তকে করে তোলে বিশেষ।
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="rounded-2xl overflow-hidden shadow-lg border border-secondary/20">
+                            <img src="pic1.png" alt="নকশি আভা লুকবুক ১" class="w-full h-44 object-cover">
+                        </div>
+                        <div class="rounded-2xl overflow-hidden shadow-lg border border-secondary/20">
+                            <img src="pic2.png" alt="নকশি আভা লুকবুক ২" class="w-full h-44 object-cover">
+                        </div>
+                    </div>
+                    <a href="https://www.facebook.com/profile.php?id=61593305901806" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#1877F2] hover:bg-[#0f5fcc] text-white font-medium px-6 py-3.5 rounded-2xl shadow-lg transition-all duration-300">
+                        <i class="fa-brands fa-facebook-f"></i> আরও দেখুন ফেসবুক পেজে
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -454,16 +622,24 @@
     <!-- Footer -->
     <footer class="bg-gray-950 text-white py-14 border-t border-secondary/20 noise-bg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-5">
-            <h3 class="text-3xl font-serif gold-text font-bold">গয়নার বাক্স</h3>
+            <h3 class="text-3xl font-serif gold-text font-bold">নকশি আভা</h3>
             <p class="text-gray-400 text-sm max-w-md mx-auto">ঐতিহ্যে আর আভিজাত্যে আপনার সাজ। প্রিমিয়াম হ্যান্ডমেড জুয়েলারি শপ।</p>
             <div class="flex justify-center gap-4 pt-2">
-                <a href="#" class="w-10 h-10 rounded-full bg-white/5 hover:bg-secondary hover:text-gray-950 flex items-center justify-center transition"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61593305901806" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-white/5 hover:bg-secondary hover:text-gray-950 flex items-center justify-center transition"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#" class="w-10 h-10 rounded-full bg-white/5 hover:bg-secondary hover:text-gray-950 flex items-center justify-center transition"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#" class="w-10 h-10 rounded-full bg-white/5 hover:bg-secondary hover:text-gray-950 flex items-center justify-center transition"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
-            <p class="text-gray-600 text-xs pt-4">সর্বস্বত্ব সংরক্ষিত © ২০২৬ | গয়নার বাক্স</p>
+            <p class="text-gray-600 text-xs pt-4">সর্বস্বত্ব সংরক্ষিত © ২০২৬ | নকশি আভা</p>
         </div>
     </footer>
+
+    <!-- Floating Facebook Order Button -->
+    <a href="https://www.facebook.com/profile.php?id=61593305901806" target="_blank" rel="noopener"
+       class="fixed bottom-6 right-6 z-40 w-16 h-16 rounded-full bg-[#1877F2] hover:bg-[#0f5fcc] shadow-2xl flex items-center justify-center text-white text-2xl transition-transform duration-300 hover:scale-110"
+       aria-label="ফেসবুকে অর্ডার করুন">
+        <span class="absolute inline-flex h-full w-full rounded-full bg-[#1877F2] opacity-60 animate-ping"></span>
+        <i class="fa-brands fa-facebook-f relative"></i>
+    </a>
 
     <!-- Cart Drawer Modal -->
     <div id="cart-drawer" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden flex justify-end transition-all">
@@ -491,6 +667,7 @@
 
     <!-- JavaScript -->
     <script>
+        const FB_PAGE_URL = 'https://www.facebook.com/profile.php?id=61593305901806';
         let cart = [];
 
         function toggleCart() {
@@ -555,7 +732,8 @@
                 alert('আপনার ব্যাগ খালি!');
                 return;
             }
-            alert('ধন্যবাদ! আপনার অর্ডারটি সফলভাবে গ্রহণ করা হয়েছে। খুব শীঘ্রই আমাদের প্রতিনিধি আপনার সাথে যোগাযোগ করবেন।');
+            alert('ধন্যবাদ! অর্ডার কনফার্ম করতে আপনাকে আমাদের ফেসবুক পেজে নিয়ে যাওয়া হচ্ছে — সেখানে মেসেজ করে অর্ডারটি ফাইনাল করুন।');
+            window.open(FB_PAGE_URL, '_blank');
             cart = [];
             updateCartUI();
             toggleCart();
@@ -599,7 +777,8 @@
             const closeBtn = document.getElementById('galleryCloseBtn');
             const cards = ring.querySelectorAll('.gallery-card');
             const N = cards.length;
-            const radius = 340;
+            const cardWidth = 220;
+            const radius = Math.round((cardWidth / 2) / Math.tan(Math.PI / N)) + 40;
 
             cards.forEach((card, i) => {
                 const angle = (360 / N) * i;
